@@ -4,6 +4,14 @@ Terse like caveman. ~50% token savings. Technical exact.
 
 ## Install
 
+### Claude Code
+
+```bash
+npx skills add nodlac/caveman-lite -a claude-code --global
+```
+
+### OpenCode
+
 ```bash
 npx skills add nodlac/caveman-lite -a opencode
 ```
@@ -15,12 +23,17 @@ npx skills add /path/to/caveman-lite -a opencode
 
 ## Available for any agent tool
 
-Add to any agent:
+Add to any agent (see valid agents below):
 ```bash
-npx skills add nodlac/caveman-lite -a explore
-npx skills add nodlac/caveman-lite -a general
-npx skills add nodlac/caveman-lite -a code-reviewer
+npx skills add nodlac/caveman-lite -a <agent-name>
 ```
+
+Valid agents: `claude-code`, `opencode`, `codex`, `cursor`, `cline`, `windsurf`, `goose`, `replit`, and 40+ more.
+
+## Global vs local
+
+- `--global`: Install once, available for all projects (recommended)
+- Without `--global`: Install per-project in `.claude/skills/`, `.opencode/skills/`, etc.
 
 ## Usage
 
@@ -41,7 +54,8 @@ verbose: explain how this works
 ## Uninstall
 
 ```bash
-npx skills remove caveman-lite
+npx skills remove nodlac/caveman-lite
+npx skills remove nodlac/caveman-lite --global
 ```
 
 ## License
