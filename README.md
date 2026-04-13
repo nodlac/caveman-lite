@@ -5,12 +5,21 @@ Terse like caveman. ~50% token savings. Technical exact.
 ## Install
 
 ```bash
-npx skills add yourusername/caveman-lite -a opencode
+npx skills add nodlac/caveman-lite -a opencode
 ```
 
 Or from local clone:
 ```bash
 npx skills add /path/to/caveman-lite -a opencode
+```
+
+## Available for any agent tool
+
+Add to any agent:
+```bash
+npx skills add nodlac/caveman-lite -a explore
+npx skills add nodlac/caveman-lite -a general
+npx skills add nodlac/caveman-lite -a code-reviewer
 ```
 
 ## Usage
